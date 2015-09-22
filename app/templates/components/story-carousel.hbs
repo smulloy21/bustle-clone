@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3 text-center">
+    {{#carousel-container transition-interval=400}}
+      {{#carousel-body}}
+        {{#each model as |story|}}
+        {{#carousel-item}}
+          {{#link-to 'story' story}}<img src={{story.largeimage}}>{{/link-to}}
+        {{/carousel-item}}
+        {{/each}}
+      {{/carousel-body}}
+
+      <div class="left carousel-control">
+        {{#carousel-arrow direction="right" tagName="div"}}
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        {{/carousel-arrow}}
+      </div>
+      <div class="right carousel-control">
+        {{#carousel-arrow direction="left" tagName="div"}}
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        {{/carousel-arrow}}
+    </div>
+    {{/carousel-container}}
+  </div>
+  <div class="col-sm-3">
+  </div>
+</div>

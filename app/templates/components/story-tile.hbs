@@ -1,0 +1,8 @@
+<div class="story-tile">
+  {{#link-to 'story' story}}
+    <h3><div class="story-headline">{{story.headline}}</div></h3>
+    <p><img src={{story.image}} alt={{story.headline}}></p>
+    <hr>
+    <h6>{{story.author}}</h6>
+    {{/link-to}}
+</div>

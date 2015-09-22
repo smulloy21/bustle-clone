@@ -1,0 +1,16 @@
+{{story-carousel model=model}}
+<br>
+
+{{#each model as |story|}}
+  <div class="container-adjustable">
+    <div class= "col-md-4">{{story-tile story=story}}</div>
+  </div>
+{{/each}}
+
+
+{{#if " model.length > 2 "}}
+<p>HELLOOOO!!!!!<br>
+THIS IS CRAZZZZZYYYYYYYYY!!!!!!</p>
+{{else}}
+<p> GAAAAHHHHH!!!!</p>
+{{/if}}
